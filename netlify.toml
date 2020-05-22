@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/notater/*"
+  to = "https://haved-notater.netlify.com/:splat"
+  status = 200
