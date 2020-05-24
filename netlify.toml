@@ -1,8 +1,10 @@
 # Access latex builds, not forced
 [[redirects]]
-  from = "/notater/*"
-  to = "https://haved-notater.netlify.com/:splat"
+  from = "/notater"
+  to = "https://haved-notater.netlify.com/:fil"
+  query = {fil = ":fil"}
   status = 200
+  force = true
 
 # We want all the niceness
 [build.processing]
