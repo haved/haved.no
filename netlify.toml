@@ -1,9 +1,24 @@
+# Access latex builds, not forced
 [[redirects]]
-  from = "/notater/*.pdf"
+  from = "/notater/*"
   to = "https://haved-notater.netlify.com/:splat"
   status = 200
 
-# All the following are from hugo example
+# We want all the niceness
+[build.processing]
+skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = false
+[build.processing.js]
+  bundle = true
+  minify = false
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+# All the following are from hugo example, but I removed split testing
 [build]
 publish = "public"
 command = "hugo --gc --minify"
@@ -12,13 +27,6 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.71.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-
-[context.split1]
-command = "hugo --gc --minify --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.71.0"
-HUGO_ENV = "production"
 
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
@@ -31,7 +39,3 @@ command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.71.0"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
-
