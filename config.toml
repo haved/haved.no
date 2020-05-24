@@ -2,3 +2,4 @@ baseURL = "http://haved.no/"
 languageCode = "en-us"
 title = "Håvard Krogstie"
 theme = "topbody"
+enableRobotsTXT = true

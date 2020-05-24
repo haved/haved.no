@@ -1,8 +1,9 @@
 [[redirects]]
-  from = "/notater/*"
-  to = "https://haved-notater.netlify.com/:splat"
+  from = "/notater/*.pdf"
+  to = "https://haved-notater.netlify.com/:splat.pdf"
   status = 200
 
+# All the following are from hugo example
 [build]
 publish = "public"
 command = "hugo --gc --minify"
