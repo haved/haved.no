@@ -1,8 +1,13 @@
 # Access latex builds, not forced
 [[redirects]]
-  from = "/notater"
-  to = "https://haved-notater.netlify.com/:fil"
-  query = {fil = ":fil"}
+  from = "/notater/"
+  to = "/notater/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/notater/*"
+  to = "https://haved-notater.netlify.com/:splat"
   status = 200
   force = true
 
