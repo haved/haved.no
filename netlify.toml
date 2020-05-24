@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/notater/*.pdf"
-  to = "https://haved-notater.netlify.com/:splat.pdf"
+  to = "https://haved-notater.netlify.com/:splat"
   status = 200
 
 # All the following are from hugo example
