@@ -1,13 +1,7 @@
 # Access latex builds, not forced
 [[redirects]]
-  from = "/notater/"
-  to = "/notater/index.html"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/notater/*"
-  to = "https://haved-notater.netlify.com/:splat"
+  to = "https://haved-notater.netlify.com/notater/:splat"
   status = 200
   force = true
 
