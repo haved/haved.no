@@ -3,7 +3,7 @@
   from = "/notater/*"
   to = "https://haved-notater.netlify.com/notater/:splat"
   status = 200
-  force = true
+  force = false
 
 # We want all the niceness
 [build.processing]
