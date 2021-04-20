@@ -1,5 +1,47 @@
-baseURL = "http://haved.no/"
+baseURL = "https://haved.no/"
 languageCode = "en-us"
-title = "Håvard Krogstie"
-theme = "topbody"
+title = "haved.no"
 enableRobotsTXT = true
+
+[params]
+goatCounterId = "https://haved.goatcounter.com/count"
+
+[taxonomies]
+tag = "tags"
+
+[menu]
+
+[[menu.main]]
+identifier = "posts"
+name       = "Posts"
+title      = "Posts"
+url        = "/posts/"
+weight     = 1
+
+[[menu.main]]
+identifier = "projects"
+name       = "Projects"
+title      = "projects"
+url        = "/projects/"
+weight     = 2
+
+[[menu.main]]
+identifier = "PDFs"
+name       = "PDFs"
+title      = "PDFs"
+url        = "/pdfs/"
+weight     = 3
+
+[[menu.main]]
+identifier = "links"
+name       = "Links"
+title      = "Links"
+url        = "/links/"
+weight     = 4
+
+[[menu.main]]
+identifier = "about"
+name       = "About"
+title      = "About"
+url        = "/about/"
+weight     = 5

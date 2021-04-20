@@ -1,0 +1,15 @@
+@import "bulma";
+
+.h-container {
+    @extend .container, .is-max-desktop;
+}
+
+.is-fullheight {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar-item {
+    align-self: stretch;
+}

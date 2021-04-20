@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <div class="is-fullheight">
+            {{- partial "header.html" . -}}
+            <main class="section is-flex-grow-1">
+                <article class="h-container">
+                    {{- block "main" . }}{{- end }}
+                </article>
+            </main>
+            {{- partial "footer.html" . -}}
+        </div>
+    {{- partial "scripts.html" . -}}
+    </body>
+</html>
