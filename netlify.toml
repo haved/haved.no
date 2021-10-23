@@ -10,6 +10,11 @@
   to = "/algdat/index.html"
   status = 200
 
+[[headers]]
+  for = "/algdat/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
 # We want all the niceness
 [build.processing]
   skip_processing = false
