@@ -5,9 +5,14 @@
   status = 200
   force = false
 
+[[redirects]]
+  from = "/algdat/*"
+  to = "/algdat/index.html"
+  status = 200
+
 # We want all the niceness
 [build.processing]
-skip_processing = false
+  skip_processing = false
 [build.processing.css]
   bundle = true
   minify = false
