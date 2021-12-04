@@ -10,6 +10,11 @@
   to = "/algdat/index.html"
   status = 200
 
+[[redirects]]
+  from = "/algdat-eksamen/*"
+  to = "/algdat-eksamen/index.html"
+  status = 200
+
 [build.processing]
   skip_processing = true
 #[build.processing.css]
