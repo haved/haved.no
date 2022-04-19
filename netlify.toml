@@ -17,35 +17,25 @@
 
 [build.processing]
   skip_processing = true
-#[build.processing.css]
-#  bundle = true
-#  minify = false
-#[build.processing.js]
-#  bundle = true
-#  minify = false
-#[build.processing.html]
-#  pretty_urls = true
-#[build.processing.images]
-#  compress = true
 
 # All the following are from hugo example, but I removed split testing
 [build]
 publish = "public"
-command = "npm install -g sass && hugo --gc --minify"
+command = "hugo --gc --minify"
 
 [context.production.environment]
-HUGO_VERSION = "0.82.1"
+HUGO_VERSION = "0.92.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-command = "npm install -g sass && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.82.1"
+HUGO_VERSION = "0.92.0"
 
 [context.branch-deploy]
-command = "npm install -g sass && hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.82.1"
+HUGO_VERSION = "0.92.0"

@@ -1,4 +1,5 @@
 ---
-title: "My collection of posts, PDFs and links"
+title: "Hi, I'm Håvard Krogstie"
 ---
-I like programming languages, compilers and algorithms.
+## This is my home of
+[Posts](), [Projects](), [PDFs](), and [Links]()
